@@ -11,7 +11,8 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-            
+            require 'dao/connect.php';
+            $con= new Connect();
         ?>
         <h1 align = "center">Infclin</h1>
 <h2 align = "center">Login</h2>
