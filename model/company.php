@@ -11,6 +11,7 @@ abstract class Company{
     private $cnpj;
     private $status;
     private $adress;
+    private $funcionario;
     function __construct($name, $cnpj){
         $this->name= $name;
         $this->cnpj=$cnpj;
@@ -59,7 +60,13 @@ abstract class Company{
     function getAdress(){
         return $this->adress;
     }
-    function toString(){
+    function setFuncionario($funcionario){
+        $this->funcionario=$funcionario;
+    }
+    function getFuncionario(){
+        return $this->funcionario;
+    }
+            function toString(){
         return "";
     }
 }

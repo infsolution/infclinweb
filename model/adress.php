@@ -12,7 +12,7 @@ class Adress{
     private $city;
     private $state;
     private $country;
-    private $zipCod;
+    private $zipCode;
     private $complement;
             
     function __construct() {
@@ -25,8 +25,29 @@ class Adress{
     function getStreet(){
        return $this->street;
     }
-    function setStreet($streetIn){
-        $this->street =$streetIn;
+    function setStreet($street){
+        $this->street =$street;
+    }
+    function setNumber($number){
+        $this->number=$number;
+    }
+    function setDistrict($district){
+        $this->district=$district;
+    }
+    function setCity($city){
+        $this->city=$city;
+    }
+    function setState($state){
+        $this->state=$state;
+    }
+    function setCountry($country){
+        $this->country=$country;
+    }
+    function setZipCode($zipCode){
+        $this->zipCode=$zipCode;
+    }
+    function setComplement($complement){
+        $this->complement=$complement;
     }
 }
 
