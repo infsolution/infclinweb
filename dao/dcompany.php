@@ -5,9 +5,11 @@
 //require 'database.php';
 //require 'company.php';
 require 'connect.php';
+require '../model/company.php';
 require '../model/consultorio.php';
 require '../model/clinic.php';
 require '../model/hospital.php';
+require '../model/adress.php';
 $type=$_POST['inf_type'];
 $comp=null;
 switch ($type){
@@ -33,7 +35,7 @@ $city = $_POST['inf_city'];
 $state = $_POST['inf_state'];
 $country = $_POST['inf_country'];
 $zipCode = $_POST['inf_zip_code'];
-$complement = $_POST´['inf_complement'];
+$complement = $_POST['inf_complement'];
 $comp->setName($name);
 $comp->setCnpj($cnpj);
 $comp->setType($type);
